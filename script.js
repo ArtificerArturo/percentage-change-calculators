@@ -30,6 +30,10 @@ function calculatePercentChange() {
 
    if (isNaN(result) || result == "Infinity") {
       resultElement.innerHTML = `Answer: <strong>Undefined</strong>`
+   } else if (resultConditioner(result).toString().charAt(0) == "8") {
+      resultElement.innerHTML = `Answer: ${resultConditioner(final)} is an <strong>${resultConditioner(
+         result
+      )}%</strong> ${direction} from ${resultConditioner(initial)}`
    } else {
       resultElement.innerHTML = `Answer: ${resultConditioner(final)} is a <strong>${resultConditioner(
          result
