@@ -1,5 +1,5 @@
 #percentChange {
-   max-width: 500px;
+   max-width: 400px;
    margin: 0 auto;
    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -25,16 +25,12 @@
    padding: 10px;
    background-color: white;
    border: solid 1px #cbcbcb;
-   width: 80px;
-}
-
-#percentChange select {
-   color: #3a3a3a;
+   width: 120px;
 }
 
 #percentChange .calculatorGuts {
    display: flex;
-   gap: 6px;
+   gap: 20px;
    align-items: center;
 }
 

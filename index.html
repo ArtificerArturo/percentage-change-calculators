@@ -9,33 +9,30 @@
 
    <body>
       <script src="script.js" defer></script>
+
       <div class="calculatorcontainer" id="percentChange">
          <div class="title">Percentage Change Calculator</div>
          <div class="background">
             <div class="calculatorGuts">
-               <div>What is</div>
-               <div class="input">
-                  <input onkeyup="calculatePercentChange()" id="wholeInput" type="number" />
+               <div calss="labelInputCombo">
+                  <label for="initialInput">Initial Value</label>
+                  <div class="input">
+                     <input onkeyup="calculatePercentChange()" id="initialInput" type="number" />
+                  </div>
                </div>
-               <div>
-                  <select onchange="calculatePercentChange()" id="dropdown">
-                     <option value="increased">increased</option>
-                     <option value="decreased">decreased</option>
-                  </select>
+               <div calss="labelInputCombo">
+                  <label for="finalInput">Final Value</label>
+                  <div class="input">
+                     <input onkeyup="calculatePercentChange()" id="finalInput" type="number" />
+                  </div>
                </div>
-               <div>by</div>
-
-               <div class="input">
-                  <input onkeyup="calculatePercentChange()" id="percentInput" type="number" />
-               </div>
-               <div>%?</div>
             </div>
          </div>
          <div id="bugLink" style="text-align: center; margin-bottom: 20px; font-size: 90%">
             Found a bug?
             <a
                class="ylist"
-               href="https://airtable.com/appR7FfpamrmFpTmL/pagGUR4cIuGPtr6cm/form?prefill_Calculator=PercentCalculator&amp;hide_Calculator=true"
+               href="https://airtable.com/appR7FfpamrmFpTmL/pagGUR4cIuGPtr6cm/form?prefill_Calculator=PercentChangeCalculator&amp;hide_Calculator=true"
                target="_blank"
                rel="noopener"
                >Let us know!</a
